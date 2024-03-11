@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles-acessorios.css">
+    <title>Acessorios</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <img class="logo" src="./assets/logo.png" alt="logo psn">
+            <nav>
+                <ul id="menu-list">
+                    <li class="nav-li"><a class="nav-link" href="./ps5.html">PS5®</a></li>
+                    <li class="nav-li"><a class="nav-link" href="./acessorios.html">Acessorios</a></li>
+                    <li class="nav-li"><a class="nav-link" href="./index.html">Controles</a></li>
+                    <li class="nav-li"><a class="nav-link" href="./ps4.html">PS4™</a></li>
+                </ul>
+            </nav>
+            <img src="./assets-acesso/menu.png" alt="menu" class="menu-icon" onclick="showMenu()">
+        </div>
+
+        <div>
+            <h1 class="titulo-1">Acessórios do PlayStation®</h1>
+            <h2 class="titulo-2">Monte a estação de jogos perfeita com controles, headsets e outros acessórios para o
+                console PS5® ou PS4™.
+            </h2>
+            <img src="./assets-acesso/accessories.webp" alt="acessorios" class="img-acessorios">
+        </div>
+
+        <div>
+            <p class="paragrafo-1">Os mais novos acessórios para o PlayStation</p>
+            <p class="paragrafo-2">Clique para ver mais acessórios em alta para o PlayStation já disponíveis ou que
+                chegarão em breve.</p>
+
+            <div class="container-1">
+                <div class="box">
+                    <img src="./assets-acesso/access-controller.webp" alt="controle" />
+                    <span>Controle Access™</span>
+                </div>
+
+                <div class="box">
+                    <img src="./assets-acesso/Elite-headset.webp" alt="hedset" />
+                    <span>headset sem fio</span>
+                </div>
+
+                <div class="box">
+                    <img src="./assets-acesso/fone-ouvido.webp" alt="fone" />
+                    <span> Cuidamos do jardim </span>
+                </div>
+
+                <div class="box">
+                    <img src="./assets-acesso/remote-player.webp" alt="remoto" />
+                    <span>Reprodutor remoto PlayStation Portal™</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://github.com/GuilhermeLC23" target="_blank">
+                <img src="./assets/github.jpeg" alt="link para github">
+            </a>
+
+            <a href="https://www.linkedin.com/in/guilherme-link-corbellini-49686b264/" target="_blank" class="github">
+                <img src="./assets/linkedin.png" alt="link para linkdin">
+            </a>
+
+            <a href="https://www.instagram.com/guilherme_link_corbellini/" target="_blank" class="github">
+                <img src="./assets/ig.png" alt="link para instagram">
+            </a>
+
+        </div>
+
+
+
+    </div>
+
+</body>
+<script>
+    const menuList = document.getElementById("menu-list")
+
+    menuList.style.maxHeight = "0px"
+
+    function showMenu() {
+        if (menuList.style.maxHeight == "0px") {
+            menuList.style.maxHeight = "120px"
+        } else {
+            menuList.style.maxHeight = "0px"
+        }
+    }
+</script>
+
+
+</html>

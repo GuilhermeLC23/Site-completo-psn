@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles-ps4.css">
+    <title>Ps4</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img class="logo" src="./assets/logo.png" alt="logo psn">
+            <nav>
+                <ul id="menu-list">
+                    <li class="nav-li"><a class="nav-link" href="./ps5.html">PS5®</a></li>
+                    <li class="nav-li"><a class="nav-link" href="./acessorios.html">Acessorios</a></li>
+                    <li class="nav-li"><a class="nav-link" href="./index.html">Controles</a></li>
+                    <li class="nav-li"><a class="nav-link" href="./ps4.html">PS4™</a></li>
+                </ul>
+            </nav>
+            <img src="./assets-acesso/menu.png" alt="menu" class="menu-icon" onclick="showMenu()">
+        </div>
+
+        <div>
+            <img src="./assets-ps4/ps4-logo-img.png" alt="logo ps4" class="img-principal">
+        </div>
+
+        <div class="container-1">
+            <h1 class="titulo-3">Escolha seu console PS4™</h1>
+            <h2 class="titulo-4">Sua escolha de poder. Os mesmos jogos maravilhosos e a mesma diversão.</h2>
+
+            <div class="box">
+                <img src="./assets-ps4/ps4-slim-img.webp" alt="controle" />
+                <span class="texto-ps4">PlayStation®4</span>
+                <p class="texto-ps4">Com 500GB ou 1TB de armazenamento</p>
+            </div>
+
+            <div class="box">
+                <img src="./assets-ps4/ps4-pro-img.webp" alt="hedset" />
+                <span class="texto-ps4">PlayStation®4 Pro</span>
+                <p class="texto-ps4">Jogos e entretenimento 4K com HDR vibrante1</p>
+            </div>
+
+        </div>
+
+        <div class="controles">
+            <p class="titulo-controle">Controle impressionante</p>
+            <p class="texto-controle">Um formato icônico que se encaixa perfeitamente em suas mãos, controles intuitivos
+                que te mantem no
+                comando do seu jogo e uma variedade vibrante de cores para combinar com seu estilo. Qualquer que seja
+                seu jeito de jogar, o controle sem fio DUALSHOCK®4 te dá suporte.</p>
+            <img src="./assets-ps4/controles-ps4-img.png" alt="controles">
+            <button class="button-controle">Conheça a linha completa</button>
+        </div>
+
+        <div class="social-links">
+            <a href="https://github.com/GuilhermeLC23" target="_blank">
+                <img src="./assets/github.jpeg" alt="link para github">
+            </a>
+
+            <a href="https://www.linkedin.com/in/guilherme-link-corbellini-49686b264/" target="_blank" class="github">
+                <img src="./assets/linkedin.png" alt="link para linkdin">
+            </a>
+
+            <a href="https://www.instagram.com/guilherme_link_corbellini/" target="_blank" class="github">
+                <img src="./assets/ig.png" alt="link para instagram">
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+<script>
+    const menuList = document.getElementById("menu-list")
+
+    menuList.style.maxHeight = "0px"
+
+    function showMenu() {
+        if (menuList.style.maxHeight == "0px") {
+            menuList.style.maxHeight = "120px"
+        } else {
+            menuList.style.maxHeight = "0px"
+        }
+    }
+</script>
+
+</html>
